@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flagloom</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-logo"> <img class="logo" src="/svg.svg"> </div>
+    <input id="searchInput" class="search-input" placeholder="Search movies...">
+    <div class="header-icons">
+      <div class="icon-circle"></div>
+      <div class="icon-circle"></div>
+      <div class="avatar-circle"></div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <p class="sidebar-title">flags</p>
+      <div id="flags" class="flags-list">
+        <div class="flag-color bg-zinc-700"></div>
+        <div class="flag-color bg-pink-500"></div>
+      </div>
+      <button title="Add Flag" class="add-flag"></button>
+    </aside>
+
+    <main class="main-content">
+      <!-- <div class="filter-bar"></div> -->
+      <div id="movieGrid" class="movie-grid"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
